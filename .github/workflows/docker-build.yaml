@@ -18,7 +18,7 @@ jobs:
         id: time
         uses: Kaven-Universe/github-action-current-date-time@v1
         with:
-          format: "YYYY-MM-DDTHH:mm:ss.sssZ"
+          format: "YYYY-MM-DDTHH:mm:ssZ"
 
       - name: Docker meta
         id: meta
