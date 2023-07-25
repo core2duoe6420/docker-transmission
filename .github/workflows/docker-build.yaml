@@ -34,3 +34,7 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+          build-args: |
+            BUILD_DATE=${{ env.NOW }}
+            VERSION=3.00
+            TRANSMISSION_VERSION=3.00
