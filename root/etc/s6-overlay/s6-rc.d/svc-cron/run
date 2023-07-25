@@ -1,0 +1,6 @@
+#!/usr/bin/with-contenv bash
+# shellcheck shell=bash
+
+crontab /etc/crontabs/root
+exec \
+    /usr/sbin/cron -f -L 15
