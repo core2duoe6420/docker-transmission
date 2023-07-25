@@ -35,6 +35,6 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           build-args: |
-            BUILD_DATE=${{ env.NOW }}
+            BUILD_DATE=${{ github.event.repository.updated_at}}
             VERSION=3.00
             TRANSMISSION_VERSION=3.00

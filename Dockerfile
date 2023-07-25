@@ -69,9 +69,9 @@ RUN \
 
 FROM 	ghcr.io/linuxserver/baseimage-ubuntu:jammy
 
-ARG BUILD_DATE=
-ARG VERSION=
-ARG TRANSMISSION_VERSION=
+ARG BUILD_DATE
+ARG VERSION
+ARG TRANSMISSION_VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="core2duo"
 
